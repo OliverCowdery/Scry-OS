@@ -1,0 +1,80 @@
+#backing {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    color: red;
+}
+
+#rockContainer {                
+    width: 100%;
+    height: 100%;
+    background: url('http://i.imgur.com/fxPVKTj.png') no-repeat;
+    background-size: 75%;
+    background-position: center;        
+}
+
+#center1 { 
+    display:table;
+    width: 100%;
+    height: 80%;    /* hack */
+}
+
+#center2 {  
+    display:table-cell;
+    vertical-align:middle;          
+}
+
+#center3 {  
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;    
+    width: 60%;        
+    
+}
+
+#revelation {
+    color: red;
+    display:block;   
+    width: 100%;   
+    font: 4.0vw arial, sans-serif;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    color:#f00; 
+    
+}
+
+
+
+#reformed_egyptian {
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;  
+    background: url('http://i.imgur.com/HoiKQEB.png') 100px 100px no-repeat;
+    /* background-color:rgba(255, 255, 0, 0.0); */
+}
+
+
+#stone {
+    height: 0px;
+    /* hide stone */
+}
+#centerContainer {
+    clear:both
+    color: red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    background: url('http://i.imgur.com/fxPVKTj.png') no-repeat;
+    background-size: 85%;
+    background-position: center;
+}
