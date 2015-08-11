@@ -61,11 +61,7 @@ function showNextPhrase() {
     });
 }
 
-$('#rockContainer').click(function () {
-    if(!inputEnabled)
-        return;
-    showNextPhrase();
-});
+
 
 
 function enableInput()
@@ -98,5 +94,10 @@ function bootUp()
 
 $(document).ready(function() {   
     bootUp(0);
+    $('#rockContainer').click(function () {
+        if(!inputEnabled)
+            return;
+        showNextPhrase();
+    });
 });
 

@@ -119,14 +119,7 @@ result = function () {
 }
 
 
-$('#stone').click(function () {
-    $("#revelation").fadeOut();
-    $("#stone").effect("shake", {
-        times: 6,
-        direction: "up"
-    }, shakeTime);
-    var mytimer = window.setTimeout('result()', shakeTime - 200);
-});
+
 
 
 $(document).ready(function () {
@@ -136,4 +129,22 @@ $(document).ready(function () {
     $("#stone").delay(1100).animate({"height": "130px"}, "slow");
     $("#revelation").delay(2000).fadeIn("slow");
     $("#instructions").delay(10000).fadeIn("slow").delay(9000).fadeOut("slow");
+
+    $("#stone").click(function () {
+        $("#revelation").fadeOut();
+        $("#stone").effect("shake", {
+            times: 6,
+            direction: "up"
+        }, shakeTime);
+        var mytimer = window.setTimeout('result()', shakeTime - 200);
+    });
+
+
+    var shakeEvent = new Shake({threshold: 5});
+    shakeEvent.start();
+    window.addEventListener('shake', function () {
+        showNextPhrase();
+    }, false);
+    
+
 });
