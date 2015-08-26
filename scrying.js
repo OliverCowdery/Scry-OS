@@ -119,7 +119,7 @@ result = function () {
         shuffle(revelations);
     }
     $("#revelation").html(revelations[revIdx]);
-    $("#revelation").fadeIn("slow").delay(2000).fadeOut("slow");
+    $("#revelation").fadeIn("slow").delay(2200).fadeOut("slow");
     revIdx++;
 }
 
