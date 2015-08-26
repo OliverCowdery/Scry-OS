@@ -95,7 +95,12 @@ var revelations = [
     "Curelom. That's spelled c-u-r-e-l-o-m",
     "Stay away from Sunstone",
     "Windows would be dashed to pieces",
-    "Hyrum's stone is of the devil",    
+    "Hyrum's stone is of the devil",
+    "Some things that are true are not very useful",
+    "The blessings might be fulfilled in the next life",
+    "Gift of the rod is a gift from God",
+    "Sell the canadian copyright",
+    "Terms and conditions may apply",
     "people fall away due to transgression."];
 
 var revIdx = 0;
