@@ -126,7 +126,19 @@ result = function () {
 
 
 
-
+function showNextPhrase()
+{
+    window.clearTimeout(revealTimer);
+    $("#stone").finish() ;
+    $("#revelation").finish();
+        
+    $("#revelation").fadeOut();
+    $("#stone").effect("shake", {
+        times: 6,
+        direction: "up"
+    }, shakeTime);
+    revealTimer = window.setTimeout('result()', shakeTime - 200);
+}
 
 $(document).ready(function () {
     $("#revelation").fadeOut(0);
@@ -136,18 +148,7 @@ $(document).ready(function () {
     $("#revelation").delay(2000).fadeIn("slow");
     $("#instructions").delay(10000).fadeIn("slow").delay(9000).fadeOut("slow");
 
-    $("#stone").click(function () {
-        window.clearTimeout(revealTimer);
-        $("#stone").finish() ;
-        $("#revelation").finish();
-        
-        $("#revelation").fadeOut();
-        $("#stone").effect("shake", {
-            times: 6,
-            direction: "up"
-        }, shakeTime);
-        revealTimer = window.setTimeout('result()', shakeTime - 200);
-    });
+    $("#stone").click(showNextPhrase);
 
 
      $("#hat").click(function () {
