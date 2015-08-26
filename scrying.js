@@ -105,7 +105,7 @@ var revelations = [
 
 var revIdx = 0;
 var shakeTime = 2000;
-
+var revealTimer = 0;
 
 function shuffle(o) {
     for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -136,15 +136,16 @@ $(document).ready(function () {
     $("#instructions").delay(10000).fadeIn("slow").delay(9000).fadeOut("slow");
 
     $("#stone").click(function () {
-        $("#stone").stop(false, true);
-        $("#revelation").stop(false, true);
+        window.clearTimeout(revealTimer);
+        $("#stone").finish() ;
+        $("#revelation").finish();
         
         $("#revelation").fadeOut();
         $("#stone").effect("shake", {
             times: 6,
             direction: "up"
         }, shakeTime);
-        var mytimer = window.setTimeout('result()', shakeTime - 200);
+        revealTimer = window.setTimeout('result()', shakeTime - 200);
     });
 
 
