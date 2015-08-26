@@ -106,6 +106,7 @@ var revelations = [
 var revIdx = 0;
 var shakeTime = 2000;
 var revealTimer = 0;
+var inHat = false;
 
 function shuffle(o) {
     for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -148,6 +149,16 @@ $(document).ready(function () {
         revealTimer = window.setTimeout('result()', shakeTime - 200);
     });
 
+
+     $("#hat").click(function () {
+          $("#hat").finish() ;
+         if(inHat)
+            $("#stone").delay(1100).animate({"height": "130px"}, "slow");
+        else
+            $("#stone").delay(1100).animate({"height": "0px"}, "slow");
+        
+        inHat = !inHat;
+     });
 
     var shakeEvent = new Shake({threshold: 5});
     shakeEvent.start();
