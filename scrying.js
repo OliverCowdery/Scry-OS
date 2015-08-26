@@ -136,8 +136,8 @@ $(document).ready(function () {
     $("#instructions").delay(10000).fadeIn("slow").delay(9000).fadeOut("slow");
 
     $("#stone").click(function () {
-        $("#stone").stop(true, true);
-        $("#revelation").stop(true, true);
+        $("#stone").stop(false, true);
+        $("#revelation").stop(false, true);
         
         $("#revelation").fadeOut();
         $("#stone").effect("shake", {
