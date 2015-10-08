@@ -101,6 +101,7 @@ var revelations = [
     "Gift of the rod is a gift from God",
     "Sell the canadian copyright",
     "Terms and conditions may apply",
+    "Ponderize",
     "people fall away due to transgression."];
 
 var revIdx = 0;
