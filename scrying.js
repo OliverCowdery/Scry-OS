@@ -102,6 +102,7 @@ var revelations = [
     "Sell the canadian copyright",
     "Terms and conditions may apply",
     "Ponderize: to monetizing a church office",
+    "Children shall be baptized when eight years old, unless the parents are gay",
     "people fall away due to transgression."];
 
 var revIdx = 0;
