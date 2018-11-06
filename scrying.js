@@ -110,6 +110,7 @@ var revelations = [
     "Protect the leaders over the children",
     "Ask children about masterbation",    
     "Battery low, just copy Adam Clarke's commentary",
+    "Adam is God, until I God change my mind about that",
     "people fall away due to transgression."];
 
 var revIdx = 0;
